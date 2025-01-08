@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bggg{
+    background-image: url("./img 2.png");
+    
+}
+.bgg{
+    background-image: url("./bg2.png");
+    background-repeat: no-repeat;
+   
+  
+}
+.footer{
+    background-image: url("./footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+*{
+    scroll-behavior: smooth;
+}

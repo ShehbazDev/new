@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hivemind</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="">
+  <!-- first section -->
+
+  <section class=" relative  ">
+
+  
+
+    <div class="absolute top-0 left-0 h-[200px] right-0 z-40">
+      <nav class=" flex justify-start  relative  items-center  ">
+        <img src="./bg2.png" alt="" class=" absolute z-0 top-0 left-0  right-0" />
+        <div class="flex gap-10 ">
+          <img src="./IMG 1.png" alt="" class=" z-20 w-16 lg:w-32 " />
+          <div class="hidden lg:flex  gap-10 items-center relative">
+            <a href="#d" class="text-white text-xl font-semibold group h-fit">HOME
+              <div
+                class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+              </div>
+            </a>
+            <a href="#c" class="text-white text-xl font-semibold group h-fit">How It Works
+              <div
+                class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+              </div>
+            </a>
+            <a href="#b" class="text-white text-xl font-semibold group h-fit">Roadmap
+              <div
+                class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+              </div>
+            </a>
+            <a href="#a" class="text-white text-xl font-semibold group h-fit">Contact
+              <div
+                class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+              </div>
+            </a>
+            <a href="#e" class="text-white    text-xl font-semibold group h-fit">Reward Calculate
+              <div
+                class="border-0 w-0 h-1 bg-white group-hover:w-full hover:border rounded-lg transition-all duration-300">
+              </div>
+            </a>
+          </div>
+
+          <div class="hidden lg:flex items-center justify-center">
+            <button class="text-white border-[2px] z-50 border-white 
+           rounded-full bg-yellow-600 hover:bg-yellow-500 mx-auto 
+           items-center py-4 px-2 pl-10 pr-10 text-xl font-bold">
+              Connect Wallet
+            </button>
+          </div>
+
+      </nav>
+
+    </div>
+
+    </div>
+
+    <div class="items-center h-screen bggg flex bg-no-repeat  justify-center relative w-full  text-center  p-2">
+
+
+      <div class="z-10 space-y-4 pt-20 pb-20 flex flex-col justify-center items-center mt-48">
+
+        <h1 class=" text-white lg:text-4xl md:text-2xl font-bold z-40 ">Welcome To The</h1>
+        <h1 class="text-white lg:text-7xl  md:text-6xl font-bold z-40">HiveMind Ecosystem</h1>
+        <p class="text-white lg:text-2xl z-50 md:text-xl ">Join the Swarm Army. Build, stake, and farm your <br>
+          way to dominance.</p>
+
+        <div class="w-full  flex justify-center items-center relative">
+          <img src="./bee 1.png" alt=""
+            class="w-56 right-20 z-30  absolute hidden md:block  transition-transform duration-300 transform hover:scale-110">
+          <img src="./bee 2.png" alt=""
+            class="w-56   left-24 z-30 absolute hidden md:block  transition-transform duration-300 transform hover:scale-110">
+         <a href="page2.html" class="text-white border-[2px]  border-white 
+         rounded-full bg-yellow-600 hover:bg-yellow-500 mx-auto 
+         items-center py-2 px-14 pl-10 pr-10 text-xl font-bold  z-40 relative  transition-transform duration-300 transform hover:scale-110">Learn more</a>
+        </div>
+        <div
+          class=" md:flex flex-row justify-between items-center z-20 bg-[#E39008] text-white p-16 mt-60 rounded-md w-full max-w-4xl mx-auto ">
+          <!-- Coming Soon -->
+          <div>
+            <h1 class="text-4xl font-bold ">Coming Soon</h1>
+          </div>
+
+          <!-- Timer -->
+          <div id="countdown" class="text-3xl font-medium">
+            95D : 22h : 52m : 56s
+          </div>
+
+          <!-- Stake Button -->
+          <button id="e" class="border-2 border-white text-white px-6 py-2 rounded-full  font-bold">
+            Stake $HONEY
+          </button>
+        </div>
+
+
+
+
+        <div class="absolute w-full h-full top-0 opacity-40 z-[0] bg-black"></div>
+
+      </div>
+      <script>
+        const countdownElement = document.getElementById("countdown");
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 95); // 95 دن آگے
+
+        function updateCountdown() {
+          const now = new Date();
+          const diff = targetDate - now;
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          countdownElement.textContent = `${days}D : ${hours}h : ${minutes}m : ${seconds}s`;
+
+          if (diff < 0) {
+            countdownElement.textContent = "Time's up!";
+          }
+        }
+
+        // ہر سیکنڈ کاؤنٹ ڈاؤن اپ ڈیٹ کریں
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+      </script>
+
+  </section>
+
+
+  <!-- second  (1) -->
+
+
+  <section class=" p-2 bg-gradient-to-b from-yellow-900 via-black to-yellow-900  w-full">
+    <div>
+      <h1 class="text-white text-center text-6xl font-bold pt-20  md:pt-10">How The Hive Works?</h1>
+      <p class="text-white text-center text-2xl">A simple breakdown of the ecosystem</p>
+    </div>
+    <div class="flex md:flex-row flex-col gap-10 items-center justify-evenly pt-20 ">
+      <div class="md:w-[40%] w-[80%]">
+        <p class="text-white text-2xl text-center md:text-start">Stake $HONEY to</p>
+        <h1 class="text-white text-6xl font-semibold text-center md:text-start">Earn Rewards</h1>
+        <p class="text-white py-4 text-xl text-center md:text-start">Begin your journey by staking $HONEY, the core
+          token of the HiveMind ecosystem. By participating in staking, you’ll unlock exciting rewards and grow your
+          influence in the hive. Build your stake and watch your rewards multiply!</p>
+        <div class="flex items-center justify-center md:justify-start">
+          <a href="page3.html" class="text-white border-[2px]  border-white 
+          rounded-full bg-yellow-600 hover:bg-yellow-500 mx-auto 
+          items-center py-2 px-14 pl-10 pr-10 text-xl font-bold  z-40 relative  transition-transform duration-300 transform hover:scale-110">Learn more</a>
+        </div>
+      </div>
+      <div>
+        <img src="./img3.png" alt=""
+          class="w-[600px] h-full transition-transform duration-300 transform hover:scale-105">
+      </div>
+    </div>
+
+    <!-- second  (2) -->
+
+
+  </section>
+  <section class=" p-2 bg-gradient-to-b from-yellow-900 via-black to-yellow-900  w-full">
+
+    <div class="flex md:flex-row flex-col-reverse gap-10 items-center justify-evenly pt-20 ">
+      <di class=" relative">
+        <img src="./bee 2.png" alt="" class="absolute z-10 -right-10 -top-20 w-28 md:block hidden">
+        <img src="./img4.png" alt=""
+          class="w-[600px] h-full transition-transform duration-300 transform hover:scale-110">
+      </di>
+      <div class="md:w-[40%] w-[80%]">
+        <p class="text-white text-2xl  text-center md:text-start">Use Rewards to Farm</p>
+        <h1 class="text-white text-6xl font-semibold  text-center md:text-start">Exclusive NFTs</h1>
+        <p class="text-white py-4 text-xl text-center md:text-start ">Put your earned rewards to work! Use
+          $POLLEN—earned through staking—to farm rare and exclusive NFTs. These unique assets will upgrade your hive,
+          boost your capabilities, and help you stand out in the swarm.</p>
+        <div>
+          <div class="flex items-center justify-center md:justify-start">
+            <div class="flex items-center justify-center md:justify-start">
+              <a href="page4.html" class="text-white border-[2px]  border-white 
+              rounded-full bg-yellow-600 hover:bg-yellow-500 mx-auto 
+              items-center py-2 px-14 pl-10 pr-10 text-xl font-bold  z-40 relative  transition-transform duration-300 transform hover:scale-110">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- section (3) -->
+
+
+  <section class=" p-2 bg-gradient-to-b from-yellow-900 via-black to-yellow-900  w-full">
+
+    <div class="flex md:flex-row flex-col gap-10 items-center justify-evenly pt-20 ">
+      <div class="md:w-[40%] w-[80%] space-y-4">
+        <p class="text-white text-3xl font-bold text-center md:text-start">Boost your hive and
+          Compete for the ultimate
+          Golden Comb.</p>
+
+        <p class="text-white  text-lg text-center md:text-start">Strengthen your hive with upgrades and compete for the
+          coveted Golden Comb. Engage in fierce competition, strategize your moves, and climb the ranks to claim
+          dominance in the HiveMind ecosystem.</p>
+        <div class="flex items-center justify-center md:justify-start">
+          <button class="text-white border-[2px]  border-white 
+               rounded-full bg-yellow-600 hover:bg-yellow-500 
+                  py-2    text-xl font-bold   w-48  transition-transform duration-300 transform hover:scale-105">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="./bee 1.png" alt="" class="absolute -top-28 md:block hidden z-10 w-28">
+        <img src="./img5.png" alt=""
+          class="w-[600px] h-full transition-transform duration-300 transform hover:scale-110">
+      </div>
+    </div>
+  </section>
+  <!-- card 4 section   -->
+  <section class=" p-2 relative  w-full  bg-black ">
+    <div class="bg-[#E39008] left-52 p-20 rounded-full absolute blur-3xl opacity-30 bottom-0"></div>
+    <div class="bg-[#E39008] bottom-0 p-20 rounded-full absolute blur-3xl opacity-30 right-10"></div>
+
+    <div class="flex flex-col  items-center justify-center gap-20 relative z-50">
+      <div>
+        <h1 id="c" class="text-white text-4xl font-bold text-center">Exciting Features Coming Soon</h1>
+      </div>
+      <div class="flex md:flex-row flex-col gap-4 items-center justify-center ">
+        <div class=" flex items-center justify-center gap-4 relative">
+          <div
+            class=" bg-white/10  rounded-xl flex flex-col gap-4  p-5 items-center transition-all duration-200 hover:scale-105">
+            <img src="./div 1.png" alt="" class="">
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-white text-2xl text-center font-bold">Staking</p>
+              <p class="text-white text-center text-sm ">Earn $POLLEN by staking <br> $HONEY.</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class=" flex items-center justify-center gap-4 ">
+          <div
+            class=" bg-white/10  rounded-xl flex flex-col gap-4  p-5 items-center transition-all duration-200 hover:scale-105">
+            <img src="./div2.png" alt="" class="">
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-white text-2xl text-center font-bold">Farming</p>
+              <p class="text-white text-center text-sm ">Use $POLLEN to farm rare <br>NFTs and upgrades.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class=" flex items-center justify-center gap-4 ">
+          <div
+            class=" bg-white/10  rounded-xl flex flex-col gap-4  p-5 items-center transition-all duration-200 hover:scale-105">
+            <img src="./div3.png" alt="" class="">
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-white text-2xl text-center font-bold">Marketplace</p>
+              <p class="text-white text-center text-sm ">Trade NFTs and build <br>your hive.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class=" flex items-center justify-center gap-4 ">
+          <div
+            class=" bg-white/10  rounded-xl flex flex-col gap-4  p-5 items-center transition-all duration-200 hover:scale-105">
+            <img src="./div4.png" alt="" class="">
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-white text-2xl text-center font-bold">Raids</p>
+              <p class="text-white text-center text-sm ">Compete to dominate <br>rival hives</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Roadmap section -->
+
+
+  <section>
+    <div class="bg-black w-full px-4 md:px-0 relative">
+      <!-- left section (1) -->
+      <div class="relative">
+        <div class="absolute p-60 rounded-full bg-yellow-500 bg-opacity-15 blur-3xl top-6 left-20"></div>
+        <div class="absolute p-60 rounded-full bg-yellow-500 bg-opacity-15 blur-3xl bottom-32 right-32"></div>
+        <div class="absolute p-60 rounded-full bg-yellow-500 bg-opacity-15 blur-3xl bottom-0 left-20"></div>
+        <div>
+          <div class="flex flex-col items-center justify-center gap-6">
+            <h1 id="b" class="text-white text-2xl md:text-4xl font-bold text-center">The Path to Hive Domination</h1>
+            <p class="text-white text-lg md:text-xl text-center">A simple breakdown of the ecosystem</p>
+          </div>
+          <div class="mx-auto w-40 md:w-60 pt-6">
+            <img src="./Line 7.png" alt="">
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <!-- Left Column -->
+          <div>
+            <div class="flex flex-col md:flex-row md:items-start">
+              <div class="md:pl-72 md:pt-20 pt-8">
+                <img src="./div 1.png" alt="" class="mx-auto md:ml-10">
+                <p class="text-white text-lg md:text-xl text-center mt-4">Launch of $HONEY token <br> and website.</p>
+              </div>
+              <div class="pt-10 md:pt-44">
+                <h1 class="text-white text-lg md:text-xl font-medium text-center md:text-left">phase 1</h1>
+                <div class="w-20 border-[#FF9D00] border-[2px] border-dashed mx-auto md:mx-0"></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-start mt-10 md:mt-0">
+              <div class="md:pl-72 md:pt-20 pt-8">
+                <img src="./div2.png" alt="" class="mx-auto md:ml-10">
+                <p class="text-white text-lg md:text-xl text-center mt-4">NFT marketplace and <br>raids.</p>
+              </div>
+              <div class="pt-10 md:pt-44">
+                <h1 class="text-white text-lg md:text-xl font-medium text-center md:text-left">phase 2</h1>
+                <div class="w-20 border-[#FF9D00] border-[2px] border-dashed mx-auto md:mx-0"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="border-l-2 border-dashed border-[#FF9D00] hidden md:block ml-20">
+            <div>
+              <div class="flex relative mt-10 md:mt-0">
+                <div class="md:pl-16 md:pt-64 pt-8">
+                  <img src="./div3.png" alt="" class="mx-auto md:ml-10">
+                  <p class="text-white text-lg md:text-xl text-center mt-4">Staking and farming <br>features.</p>
+                </div>
+                <div class=" md:pt-80 absolute">
+                  <h1 class="text-white text-lg md:text-xl font-medium text-center md:text-left">phase 3</h1>
+                  <div class="w-28 border-[#FF9D00] border-[2px] border-dashed mx-auto md:mx-0"></div>
+                </div>
+              </div>
+
+              <div class="flex relative mt-10 md:mt-0">
+                <div class="md:pl-16 md:pt-44 pt-8">
+                  <img src="./div4.png" alt="" class="mx-auto md:ml-10">
+                  <p class="text-white text-lg md:text-xl text-center mt-4">DAO governance and Golden <br>Comb
+                    competition.</p>
+                </div>
+                <div class="pt-10 md:pt-60 absolute ">
+                  <h1 class="text-white text-lg md:text-xl font-medium text-center md:text-left">phase 4</h1>
+                  <div class="w-28 border-[#FF9D00] border-[2px] border-dashed mx-auto md:mx-0"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" pl-[46.5%] bg-black ">
+        <div class="h-8 w-8 bg-[#FF9D00]  rounded-full md:block hidden"></div>
+        <img src="./bee 2.png" alt="" class=" ">
+      </div>
+    </div>
+
+  </section>
+
+  <div class="bg-black  w-full">
+    <div>
+      <!-- text section(1) -->
+      <div class="flex gap-32">
+        <div class="pt-20 md:flex flex-col hidden">
+          <div class=" flex gap-2 pl-40 w-fit">
+            <img src="./src1.png" alt="">
+            <h1 class="text-white pt-4 text-2xl font-normal">Join the Swarm Army. Build, <br>stake, and farm your way to <br>dominance.</h1>
+          </div>
+          <div class=" pl-40  w-fit pt-4 flex flex-col gap-2">
+            <h1 class="text-white font-bold text-xl">HiveMind: The sweetest coin in Hyperliquid <br>Blockchain</h1>
+            <div class="border-b-2 w-96 border-dashed border-[#FF9D00]"></div>
+          </div>
+          <div class="flex gap-4 pl-40 pt-4  w-fit">
+            <img src="pin.png" alt="" class="w-16 hover:scale-125 transition-all duration-300">
+            <img src="twitter.png" alt="" class="w-16 hover:scale-125 transition-all duration-300">
+            <img src="telegram.png" alt="" class="w-16 hover:scale-125 transition-all duration-300">
+          </div>
+        </div>
+        <div class="pt-20 flex flex-col p-2">
+          <div>
+            <h1 id="a" class="text-white text-2xl">Contact Form</h1>
+          </div>
+          <div class="flex gap-2 pt-4">
+            <input type="text" placeholder="Full Name" class="text-sm placeholder-gray-500 w-full rounded-2xl bg-white/15 text-white p-3">
+            <input type="text" placeholder="E-mail" class="text-sm placeholder-gray-500 w-full rounded-2xl bg-white/15 text-white p-3">
+          </div>
+          <div class="pt-10  ">
+      <textarea extarea name="mass" type="text" placeholder="Message" rows="10" cols="30" class="  text-sm placeholder-gray-500 w-full rounded-2xl bg-white/15 text-white p-3 min-h-[120px]" id=""></textarea>
+          </div>
+          <div class="flex md:justify-end items-center">
+            <button class="text-black bg-[#FF9D00] px-5 py-2 font-semibold rounded-full pt-2">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <!-- END Section  -->
+
+  <section class="bg-black footer p-16  hidden md:block w-full ">
+    <div class=" mt-9 flex md:justify-center gap-10 md:flex-row flex-col  md:items-center text-center ">
+   
+
+        <a href="#d" class="text-white text-xl font-semibold group h-fit">HOME
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#c" class="text-white text-xl font-semibold group h-fit">How It Works
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#b" class="text-white text-xl font-semibold group h-fit">Roadmap
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#a" class="text-white text-xl font-semibold group h-fit">Contact
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        
+ 
+      
+    </div>
+  </section>
+
+
+  <!-- responsive  -->
+  <section class=" bg-[#FF9D00] p-10   md:hidden block w-full ">
+    <div class=" p-2 flex md:justify-center gap-10 md:flex-row flex-col  md:items-center text-center ">
+   
+
+        <a href="#" class="text-white text-xl font-semibold group h-fit">HOME
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#" class="text-white text-xl font-semibold group h-fit">How It Works
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#" class="text-white text-xl font-semibold group h-fit">Roadmap
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        <a href="#" class="text-white text-xl font-semibold group h-fit">Contact
+          <div
+            class="border-0 w-0 group-hover:w-full hover:border rounded-lg h-1 bg-white transition-all duration-300">
+          </div>
+        </a>
+        
+ 
+      
+    </div>
+  </section>
+  <div class="  border-t-2 border-dashed border-[#FF9D00] ">
+    <h1 class="text-center pt-4 text-black bg-[#FF9D00]"> @ 2025 Hivemind Labs - All Rights Reserved</h1>
+   
+  </div>
+  
+
+</body>
+
+</html>
